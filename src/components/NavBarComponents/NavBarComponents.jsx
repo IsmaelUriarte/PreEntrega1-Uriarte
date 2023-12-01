@@ -22,10 +22,10 @@ const NavBarComponents = () => {
             <Nav.Link href="#link">Contact</Nav.Link>
             
             <NavDropdown title="Categories" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Coupé</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Sedán</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">4X4</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">De lujo</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   const App = () => {
 
     const fullPage = {
-      width: "100vw",
+      maxWidth: "100vw",
       minHeight: "100vh"
     }
 
@@ -16,7 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     <div style={fullPage}>
       <div >
         <NavBarComponents/>
-        <ItemListContainer greeting="Bienvenidos"/>
+        <ItemListContainer greeting="Welcome WebSite"/>
       </div>
 
       <div>

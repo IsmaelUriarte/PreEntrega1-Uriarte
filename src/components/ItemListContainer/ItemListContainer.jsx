@@ -1,10 +1,15 @@
+import ItemCardComponent from "../ItemCardComponent/ItemCardComponent"
+import Carousel from 'react-bootstrap/Carousel';
 
 const ItemListContainer = ({greeting}) => {
   return (
     <div className="container mt-4">
-      <div className="bg-red-400 text-center rounded-xl p-4">
-        <h1 className="text-2xl ">{greeting}</h1>
+
+      <div className="bg-cyan-950 my-12 text-center rounded-2xl p-12">
+        <h1 className="text-4xl text-white">{greeting}</h1>
       </div>
+
+        <ItemCardComponent/>
     </div>
   )
 }

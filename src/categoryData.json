@@ -1,0 +1,29 @@
+[
+    {
+        "id":"1",
+        "categoria": "Coupé",
+        "imagen": "./public/bmw-sedan.webp"
+        
+      },
+
+      {
+        "id":"2",
+        "categoria": "Sedán",
+        "imagen": "./public/bmw-sedan.webp"
+        
+      },
+
+      {
+        "id":"3",
+        "categoria": "4x4",
+        "imagen": "./public/bmw-familiar.webp"
+        
+      },
+
+      {
+        "id":"4",
+        "categoria": "De lujo",
+        "imagen": "./public/bmw-familiar.webp"
+        
+      }
+]

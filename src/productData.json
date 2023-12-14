@@ -1,0 +1,75 @@
+    
+   [ 
+    {
+    "id":"1",
+    "categoria": "2",
+    "imagen": "./public/bmw-sedan.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"2",
+    "imagen": "./public/bmw-sedan.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"3",
+    "imagen": "./public/bmw-sedan.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"4",
+    "imagen": "./public/bmw-sedan.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"5",
+    "imagen": "./public/bmw-familiar.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"6",
+    "imagen": "./public/bmw-familiar.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"7",
+    "imagen": "./public/bmw-familiar.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"8",
+    "imagen": "./public/bmw-familiar.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  }
+]

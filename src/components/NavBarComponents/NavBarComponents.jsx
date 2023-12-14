@@ -20,13 +20,16 @@ const NavBarComponents = () => {
             <Nav.Link href="#home" className='text-lg font-semibold'>Home</Nav.Link>
             
             <Nav.Link href="#link" className='text-lg font-semibold'>Contact</Nav.Link>
+
+            <Nav.Link href="#link" className='text-lg font-semibold'>About Us</Nav.Link>
             
-            <NavDropdown className='text-lg font-semibold' title="Categories" id="basic-nav-dropdown">
+            <NavDropdown className='text-lg font-semibold' title="Models" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Coupé</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Sedán</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">4X4</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">De lujo</NavDropdown.Item>
             </NavDropdown>
+            
           </Nav>
         </Navbar.Collapse>
         <CartWidgetComponent/>

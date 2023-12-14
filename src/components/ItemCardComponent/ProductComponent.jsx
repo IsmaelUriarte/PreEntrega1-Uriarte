@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 const ProductComponent = ({imagen, titulo, descripcion, precio, enlace}) => {
   return (
@@ -19,7 +19,7 @@ const ProductComponent = ({imagen, titulo, descripcion, precio, enlace}) => {
         <p className="text-sm font-medium text-gray-900">{precio}</p>
         </div>
         <div className='mt-2.5 text-center '>
-          <a href={enlace} className="p-2.5 m-1.5 rounded-xl bg-cyan-950 text-gray-100 ">Agregar</a>
+          <Link to="/item" className="p-2.5 m-1.5 rounded-xl bg-cyan-950 text-gray-100 ">Ver más</Link>
         </div>
     </div>
   )

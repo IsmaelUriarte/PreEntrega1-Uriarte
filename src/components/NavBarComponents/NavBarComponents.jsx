@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidgetComponent from '../CartWidgetComponent/CartWidgetComponent';
+import { Link } from "react-router-dom"
 
 const NavBarComponents = () => {
 
@@ -11,19 +12,19 @@ const NavBarComponents = () => {
         <div>
             <Navbar expand="lg" className="bg-body-tertiary" >
       <Container>
-        <Navbar.Brand href="#home" className='text-3xl font-semibold'>NABMW</Navbar.Brand>
+        <Link to="/" className='text-3xl font-semibold'>NABMW</Link>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='mx-auto' />
         <Navbar.Collapse id="basic-navbar-nav">
           
           <Nav className="mx-auto">
-            <Nav.Link href="#home" className='text-lg font-semibold'>Home</Nav.Link>
+            <Link to="/" className='text-lg font-semibold mt-2 mr-2.5'>Home</Link>
             
-            <Nav.Link href="#link" className='text-lg font-semibold'>Contact</Nav.Link>
+            <Link href="#link" className='text-lg font-semibold mt-2 mr-2.5'>Contact</Link>
 
-            <Nav.Link href="#link" className='text-lg font-semibold'>About Us</Nav.Link>
+            <Link to="/nosotros" className='text-lg font-semibold mt-2 mr-2.5'>About Us</Link>
             
-            <NavDropdown className='text-lg font-semibold' title="Models" id="basic-nav-dropdown">
+            <NavDropdown className='text-lg font-semibold' title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Coupé</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Sedán</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">4X4</NavDropdown.Item>

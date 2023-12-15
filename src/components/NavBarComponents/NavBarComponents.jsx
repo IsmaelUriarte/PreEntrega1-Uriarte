@@ -18,17 +18,22 @@ const NavBarComponents = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           
           <Nav className="mx-auto">
-            <Link to="/" className='text-lg font-semibold mt-2 mr-2.5'>Home</Link>
+            <Link to="/" className='text-lg font-semibold mt-2 mr-5'>Home</Link>
             
-            <Link href="#link" className='text-lg font-semibold mt-2 mr-2.5'>Contact</Link>
+            <Link href="#link" className='text-lg font-semibold mt-2 mr-5'>Contact</Link>
 
-            <Link to="/nosotros" className='text-lg font-semibold mt-2 mr-2.5'>About Us</Link>
-            
-            <NavDropdown className='text-lg font-semibold' title="Categories" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Coupé</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Sedán</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">4X4</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">De lujo</NavDropdown.Item>
+            <Link to="/nosotros" className='text-lg font-semibold mt-2 mr-4'>About Us</Link>
+
+            <NavDropdown className='text-lg font-semibold text-black' title="Categories" id="basic-nav-dropdown" >
+              
+              <li><Link className="dropdown-item" to={"/productos/1"}>Coupé</Link></li>
+              <li><hr className="dropdown-divider"/></li>
+              <li><Link className="dropdown-item" to={"/productos/2"}>Sedán</Link></li>
+              <li><hr className="dropdown-divider"/></li>
+              <li><Link className="dropdown-item" to={"/productos/3"}>4X4</Link></li>
+              <li><hr className="dropdown-divider"/></li>
+              <li><Link className="dropdown-item" to={"/productos/4"}>De lujo</Link></li>
+              
             </NavDropdown>
             
           </Nav>

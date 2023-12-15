@@ -4,8 +4,8 @@ const FooterComponent = () => {
   return (
     <div>
       <ContactComponent />
-        <div className="container bg-black p-5 text-white">
-            Este es el div de contacto
+        <div className="container bg-white p-5 text-white">
+            <h1 className="text-black">Footer</h1>
         </div>
     </div>
     

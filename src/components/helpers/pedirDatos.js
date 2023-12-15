@@ -16,3 +16,35 @@ export const pedirCategoria = () => {
     })
 
 }
+
+export const pedirProducto = (id) => {
+
+    return new Promise((resolve, reject) => {
+        const item = data.find((el) => el.id === id);
+
+        if (item){
+            resolve(item);
+        } else {
+            reject ({
+                error: "No se encontró el producto"
+            })
+        }
+    })
+
+}
+
+export const pedirProductoPorCategoria = (categoria) => {
+
+    return new Promise((resolve, reject) => {
+        const item = data.find((el) => el.categoria === categoria);
+
+        if (item){
+            resolve(item);
+        } else {
+            reject ({
+                error: "No se encontró la categoria"
+            })
+        }
+    })
+
+}

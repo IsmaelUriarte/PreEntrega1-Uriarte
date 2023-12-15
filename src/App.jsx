@@ -11,6 +11,7 @@ import FooterComponent from './components/FooterComponents/FooterComponent';
 // camelCase <- para todo lo demas 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactComponent } from './components/ContactComponent/ContactComponent';
+import ProductsListContainer from './components/ItemListContainer/ProductsListContainer';
 
 
   const App = () => {
@@ -27,12 +28,11 @@ import { ContactComponent } from './components/ContactComponent/ContactComponent
 
         <NavBarComponents/>
 
-        <CategoryListContainer greeting="Welcome WebSite"/>
-
         <Routes>
 
           <Route path="/" element={<ItemListContainer/>} />
-          <Route path="/item" element={<ItemDetailContainer/>} />
+          <Route path="/item/:id" element={<ItemDetailContainer/>} />
+          <Route path="/productos/:categoria" element={<ProductsListContainer/>} />
           <Route path="/nosotros" element={<Nosotros/>} />
           <Route/>
           

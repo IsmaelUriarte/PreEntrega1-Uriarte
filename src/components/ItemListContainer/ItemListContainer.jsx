@@ -1,4 +1,5 @@
 import ItemCardComponent from "../ItemCardComponent/ItemCardComponent"
+import CategoryListContainer from "../CategoryComponent/CategoryListContainer";
 import Carousel from 'react-bootstrap/Carousel';
 import { pedirDatos } from "../helpers/pedirDatos";
 import { useEffect, useState } from "react";
@@ -16,9 +17,8 @@ const ItemListContainer = ({greeting}) => {
   
     return (
       <div className="container mt-4">
-        <div className="bg-cyan-950 my-12 text-center rounded-2xl p-12">
-          <h1 className="text-4xl text-white">{greeting}</h1>
-        </div>
+
+        <CategoryListContainer greeting="Welcome WebSite"/> 
 
         <ItemCardComponent productos={productos} />
       </div>

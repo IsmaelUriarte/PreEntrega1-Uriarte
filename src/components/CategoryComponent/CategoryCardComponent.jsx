@@ -6,7 +6,7 @@ const CategoryCardComponent = ({categorias}) => {
         {
             categorias.map (
                 (elemento) => 
-                <CategoryComponent key={elemento.id} nombre={elemento.categoria} imagen={elemento.imagen} />
+                <CategoryComponent key={elemento.id} id={elemento.id} nombre={elemento.categoria} imagen={elemento.imagen} />
             )}
         </div>
       )

@@ -16,8 +16,8 @@ const CategoryListContainer = ({greeting}) => {
 
   return (
     <div className="container mt-4">
-        <div className="bg-cyan-950 my-12 text-center rounded-2xl p-12">
-            <h1 className="text-4xl text-white">{greeting}</h1>
+        <div className="bg-cyan-950 mt-16 mb-14 mx-16 text-center rounded-2xl p-12 shadow-xl">
+            <h1 className=" text-5xl font-medium text-white">{greeting}</h1>
         </div>
 
         <CategoryCardComponent categorias={categorias} />

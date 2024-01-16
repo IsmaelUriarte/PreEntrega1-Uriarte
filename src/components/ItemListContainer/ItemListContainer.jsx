@@ -18,7 +18,7 @@ const ItemListContainer = ({greeting}) => {
     return (
       <div className="container mt-4">
 
-        <CategoryListContainer greeting="Welcome WebSite"/> 
+        <CategoryListContainer greeting="Our list of Categories"/> 
 
         <ItemCardComponent productos={productos} />
       </div>

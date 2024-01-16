@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Nosotros from './pages/Nosotros';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FooterComponent from './components/FooterComponents/FooterComponent';
+import HomeComponent from './components/HomeComponent/HomeComponent';
 
 //Importación de estilos de boostrap.
 // PascaleCase <- para los componentes
@@ -27,7 +28,7 @@ import ProductsListContainer from './components/ItemListContainer/ProductsListCo
       <BrowserRouter>
 
         <NavBarComponents/>
-
+        <HomeComponent/>
         <Routes>
 
           <Route path="/" element={<ItemListContainer/>} />
@@ -36,10 +37,10 @@ import ProductsListContainer from './components/ItemListContainer/ProductsListCo
           <Route path="/nosotros" element={<Nosotros/>} />
           <Route/>
           
-
-        </Routes>
-        {/* <ItemListContainer greeting="Welcome WebSite"/> */}        
+        </Routes>        
         
+        
+
         <FooterComponent />
 
       </BrowserRouter>

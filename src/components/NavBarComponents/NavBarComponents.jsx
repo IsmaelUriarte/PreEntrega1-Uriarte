@@ -9,9 +9,9 @@ import { Link } from "react-router-dom"
 const NavBarComponents = () => {
 
     return (
-        <div>
-            <Navbar expand="lg" className="bg-body-tertiary" >
-      <Container>
+        <div className=''>
+            <Navbar expand="lg" className="bg-body-tertiary " >
+      <Container className='shadow-xl shadow-gray-100/50'>
         <Link to="/" className='text-3xl font-semibold'>NABMW</Link>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='mx-auto' />

@@ -16,9 +16,14 @@ const CategoryListContainer = ({greeting}) => {
 
   return (
     <div className="container mt-4">
-        <div className="bg-cyan-950 mt-16 mb-14 mx-16 text-center rounded-2xl p-12 shadow-xl">
-            <h1 className=" text-5xl font-medium text-white">{greeting}</h1>
+        
+        <div className="bg-[url('../public/bmw-serie-2-coupe.webp')] mx-16 rounded-[40px] bg-auto bg-top bg-no-repeat">
+            <div className="bg-cyan-950 bg-opacity-80 mt-28 mb-20 py-28 text-center rounded-[40px] p-12 shadow-xl shadow-cyan-950/50">
+                <p className=" text-6xl font-medium border-t-4 pt-3 text-white">{greeting}</p>
+            </div>
         </div>
+        
+        
 
         <CategoryCardComponent categorias={categorias} />
     </div>

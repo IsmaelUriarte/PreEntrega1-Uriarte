@@ -2,9 +2,9 @@
    [ 
     {
     "id":"1",
-    "categoria": "2",
-    "imagen": "../public/bmw-sedan.webp",
-    "titulo": "BMW X2",
+    "categoria": "1",
+    "imagen": "../public/bmw-series-coupe2.webp",
+    "titulo": "BMW Z4",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""
@@ -12,9 +12,9 @@
 
   {
     "id":"2",
-    "categoria": "2",
-    "imagen": "../public/bmw-sedan.webp",
-    "titulo": "BMW X2",
+    "categoria": "1",
+    "imagen": "../public/bmw-series-coupe2.webp",
+    "titulo": "BMW Z4",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""
@@ -22,9 +22,9 @@
 
   {
     "id":"3",
-    "categoria": "3",
-    "imagen": "../public/bmw-sedan.webp",
-    "titulo": "BMW X2",
+    "categoria": "1",
+    "imagen": "../public/bmw-series-coupe2.webp",
+    "titulo": "BMW Z4",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""
@@ -32,9 +32,9 @@
 
   {
     "id":"4",
-    "categoria": "3",
-    "imagen": "../public/bmw-sedan.webp",
-    "titulo": "BMW X2",
+    "categoria": "1",
+    "imagen": "../public/bmw-series-coupe2.webp",
+    "titulo": "BMW Z4",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""
@@ -42,8 +42,9 @@
 
   {
     "id":"5",
-    "imagen": "../public/bmw-familiar.webp",
-    "titulo": "BMW X2",
+    "categoria": "2",
+    "imagen": "../public/bmw-series-sedan1.webp",
+    "titulo": "BMW M240i xDrive",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""
@@ -51,8 +52,9 @@
 
   {
     "id":"6",
-    "imagen": "../public/bmw-familiar.webp",
-    "titulo": "BMW X2",
+    "categoria": "2",
+    "imagen": "../public/bmw-series-sedan1.webp",
+    "titulo": "BMW M240i xDrive",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""
@@ -60,8 +62,9 @@
 
   {
     "id":"7",
-    "imagen": "../public/bmw-familiar.webp",
-    "titulo": "BMW X2",
+    "categoria": "2",
+    "imagen": "../public/bmw-series-sedan1.webp",
+    "titulo": "BMW M240i xDrive",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""
@@ -69,8 +72,89 @@
 
   {
     "id":"8",
-    "imagen": "../public/bmw-familiar.webp",
+    "categoria": "2",
+    "imagen": "../public/bmw-series-sedan1.webp",
+    "titulo": "BMW M240i xDrive",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"9",
+    "categoria": "3",
+    "imagen": "../public/bmw-seriesX3.webp",
     "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"10",
+    "categoria": "3",
+    "imagen": "../public/bmw-seriesX3.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"11",
+    "categoria": "3",
+    "imagen": "../public/bmw-seriesX3.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"12",
+    "categoria": "3",
+    "imagen": "../public/bmw-seriesX3.webp",
+    "titulo": "BMW X2",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"13",
+    "categoria": "4",
+    "imagen": "../public/bmw-series-lujo.webp",
+    "titulo": "BMW 750Li",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"14",
+    "categoria": "4",
+    "imagen": "../public/bmw-series-lujo.webp",
+    "titulo": "BMW 750Li",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"15",
+    "categoria": "4",
+    "imagen": "../public/bmw-series-lujo.webp",
+    "titulo": "BMW 750Li",
+    "descripcion": "Recien Llegado",
+    "precio": "$15.000USD",
+    "enlace": ""
+  },
+
+  {
+    "id":"16",
+    "categoria": "4",
+    "imagen": "../public/bmw-series-lujo.webp",
+    "titulo": "BMW 750Li",
     "descripcion": "Recien Llegado",
     "precio": "$15.000USD",
     "enlace": ""

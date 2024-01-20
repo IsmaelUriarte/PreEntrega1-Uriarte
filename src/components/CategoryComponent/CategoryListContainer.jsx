@@ -1,18 +1,13 @@
 import { pedirCategoria } from "../helpers/pedirDatos";
 import { useEffect, useState } from "react";
 import CategoryCardComponent from "./CategoryCardComponent";
-
+import { useGetFirestoreCollection } from "../../hooks/useProduct";
 
 const CategoryListContainer = ({greeting}) => {
 
-    const [categorias, setCategorias] = useState ([]);
-    
-    useEffect(() => {
-        pedirCategoria ()
-            .then ((res) => {
-                setCategorias(res);
-            })
-      }, [])
+    //const [categorias, setCategorias] = useState ([]);
+    const { productsData } = useGetFirestoreCollection('category');
+
 
   return (
     <div className="container mt-4">
@@ -25,7 +20,7 @@ const CategoryListContainer = ({greeting}) => {
         
         
 
-        <CategoryCardComponent categorias={categorias} />
+        <CategoryCardComponent categorias={productsData} />
     </div>
   )
 }

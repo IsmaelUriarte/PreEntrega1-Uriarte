@@ -5,9 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidgetComponent from '../CartWidgetComponent/CartWidgetComponent';
 import { Link } from "react-router-dom"
+import { useGetFirestoreCollection } from '../../hooks/useProduct';
 
 const NavBarComponents = () => {
-
+    const { productsData } = useGetFirestoreCollection('category');
     return (
         <div className=''>
             <Navbar expand="lg" className="bg-body-tertiary " >
@@ -25,14 +26,16 @@ const NavBarComponents = () => {
             <Link to="/nosotros" className='text-lg font-semibold mt-2 mr-4'>About Us</Link>
 
             <NavDropdown className='text-lg font-semibold text-black' title="Categories" id="basic-nav-dropdown" >
-              
-              <li><Link className="dropdown-item" to={"/productos/1"}>Coupé</Link></li>
-              <li><hr className="dropdown-divider"/></li>
-              <li><Link className="dropdown-item" to={"/productos/2"}>Sedán</Link></li>
-              <li><hr className="dropdown-divider"/></li>
-              <li><Link className="dropdown-item" to={"/productos/3"}>4X4</Link></li>
-              <li><hr className="dropdown-divider"/></li>
-              <li><Link className="dropdown-item" to={"/productos/4"}>De lujo</Link></li>
+              {
+                productsData.map ((auto, index) => {
+                  return(
+                    <>
+                      <li key={auto.id} ><Link className="dropdown-item" to={`/productos/${auto.nombre}`}>{auto.nombre}</Link></li>
+                      <li key={index}><hr className="dropdown-divider"/></li>
+                    </>
+                  )
+                })
+              }
               
             </NavDropdown>
             

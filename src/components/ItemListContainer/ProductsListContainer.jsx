@@ -1,32 +1,13 @@
 import { useParams } from "react-router-dom";
 import ItemCardComponent from "../ItemCardComponent/ItemCardComponent"
-import { pedirDatos } from "../helpers/pedirDatos";
-import { useEffect, useState } from "react";
+import { useGetFirestoreCollectionCategory } from "../../hooks/useProduct";
 
 const ProductsListContainer = () => {
-
-    const [productos, setProductos] = useState ([]);
-
-    const categoria = useParams ().categoria;
-  
-      useEffect(() => {
-        pedirDatos ()
-            .then ((res) => {
-                if(categoria){
-                    setProductos(res.filter ((producto) => producto.categoria === categoria));   
-                } else {
-                    setProductos(res);
-                }
-                
-            })
-      }, [categoria])
-    
+  const filtro = useParams ().categoria;
+  const { productsData } = useGetFirestoreCollectionCategory(filtro);
       return (
         <div className="container mt-4">
-   
-
-  
-          <ItemCardComponent productos={productos} />
+          <ItemCardComponent productsData={productsData} />
         </div>
       )
     }

@@ -1,26 +1,20 @@
 import ItemCardComponent from "../ItemCardComponent/ItemCardComponent"
 import CategoryListContainer from "../CategoryComponent/CategoryListContainer";
-import Carousel from 'react-bootstrap/Carousel';
-import { pedirDatos } from "../helpers/pedirDatos";
-import { useEffect, useState } from "react";
+import HomeComponent from "../HomeComponent/HomeComponent";
+import { useGetFirestoreCollection } from "../../hooks/useProduct";
 
-const ItemListContainer = ({greeting}) => {
-
-  const [productos, setProductos] = useState ([]);
-
-    useEffect(() => {
-      pedirDatos ()
-          .then ((res) => {
-              setProductos(res);
-          })
-    }, [])
+const ItemListContainer = () => {
+  const { productsData } = useGetFirestoreCollection('product');
   
     return (
-      <div className="container mt-4">
+      <div>
+        <HomeComponent/>
+        <div className="container mt-4">
 
-        <CategoryListContainer greeting="Our list of Categories"/> 
+          <CategoryListContainer greeting="Our list of Categories"/> 
 
-        <ItemCardComponent productos={productos} />
+          <ItemCardComponent productsData={productsData} />
+        </div>
       </div>
     )
   }

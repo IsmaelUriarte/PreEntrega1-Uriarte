@@ -28,7 +28,7 @@ import ProductsListContainer from './components/ItemListContainer/ProductsListCo
       <BrowserRouter>
 
         <NavBarComponents/>
-        <HomeComponent/>
+        
         <Routes>
 
           <Route path="/" element={<ItemListContainer/>} />

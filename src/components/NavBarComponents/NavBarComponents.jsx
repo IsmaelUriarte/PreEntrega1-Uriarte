@@ -21,7 +21,7 @@ const NavBarComponents = () => {
           <Nav className="mx-auto">
             <Link to="/" className='text-lg font-semibold mt-2 mr-5'>Home</Link>
             
-            <Link href="#link" className='text-lg font-semibold mt-2 mr-5'>Contact</Link>
+            <Link to="/contacto" className='text-lg font-semibold mt-2 mr-5'>Contact</Link>
 
             <Link to="/nosotros" className='text-lg font-semibold mt-2 mr-4'>About Us</Link>
 

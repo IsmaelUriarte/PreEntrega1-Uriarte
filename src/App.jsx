@@ -5,14 +5,14 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Nosotros from './pages/Nosotros';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FooterComponent from './components/FooterComponents/FooterComponent';
-import HomeComponent from './components/HomeComponent/HomeComponent';
+
 
 //Importación de estilos de boostrap.
 // PascaleCase <- para los componentes
 // camelCase <- para todo lo demas 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ContactComponent } from './components/ContactComponent/ContactComponent';
 import ProductsListContainer from './components/ItemListContainer/ProductsListContainer';
+import Contacto from './pages/Contacto';
 
 
   const App = () => {
@@ -35,7 +35,7 @@ import ProductsListContainer from './components/ItemListContainer/ProductsListCo
           <Route path="/item/:id" element={<ItemDetailContainer/>} />
           <Route path="/productos/:categoria" element={<ProductsListContainer/>} />
           <Route path="/nosotros" element={<Nosotros/>} />
-          <Route/>
+          <Route path="/contacto" element={<Contacto/>} />
           
         </Routes>        
         

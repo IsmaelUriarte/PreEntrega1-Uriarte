@@ -71,8 +71,44 @@ export const useGetFirestoreCollectionFilter = (collectionName='product', campo=
             setProductsData(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
         });
 
-      }, [filtro[0]]);
+      }, []);
   return { productsData };
 };
+
+export const useGetFirestoreCartProducts = (itemsCart) => {
+
+  const [cartProductsData, setCartProductsData] = useState([]);
+
+  useEffect(() => {
+    if(itemsCart.length !== 0) {
+
+      const itemsIdList = itemsCart.map((item) => item.id);
+      const db = getFirestore();
+      const dataFilterCollection = collection(db, 'product');
+      const q = query(dataFilterCollection, where('titulo', 'in', itemsIdList));
+
+      getDocs(q).then((snapshot) => {
+        if (snapshot.empty) {
+          console.log("No hay resultados...");
+          setCartProductsData(['nodata']);
+        } else {
+          setCartProductsData(snapshot.docs.map((doc) => ({ 
+            id: doc.id,
+            cantidad: itemsCart.find((item) => item.id == doc.data().titulo).cantidad,
+            ...doc.data()
+            })
+          ));
+        }
+      });
+
+    }else{
+      setCartProductsData(['nodata']);
+    }
+
+    }, [itemsCart]);
+    
+  return { cartProductsData };
+};
+
 
 

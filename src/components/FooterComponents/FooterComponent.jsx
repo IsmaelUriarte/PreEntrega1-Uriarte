@@ -42,8 +42,8 @@ const FooterComponent = () => {
             </div>
           </div>
         </div>
-        <div class="copy pb-3 text-center bg-gradient-to-r from-zinc-300 via-zinc-300 to-zinc-300">
-            <p class="parrafo-foter pt-5">Términos y Condiciones,
+        <div className="copy pb-3 text-center bg-gradient-to-r from-zinc-300 via-zinc-300 to-zinc-300">
+            <p className="parrafo-foter pt-5">Términos y Condiciones,
             Normas de Confidencialidad y Privacidad</p>
             <small>&copy;2017 <b>NABMW</b> - Todos los Derechos Reservados</small>
         </div>

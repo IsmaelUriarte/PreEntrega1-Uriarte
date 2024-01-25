@@ -1,4 +1,5 @@
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Nosotros = () => {
   return (
@@ -22,12 +23,32 @@ const Nosotros = () => {
               </h4>
           </div>
 
+          {/* <------> */}
+
+          <div className="">
+            <h2 className="text-center font-medium text-4xl mb-14 mt-20">
+              Conocé a nuestro equipo 
+            </h2>
+
+            <div className='divP w-[700px] bg-cyan-950 mx-auto my-8 p-10 rounded-xl shadow-lg shadow-cyan-950 relative '>
+              <div className='absolute -left-8 h-full top-0'>
+                <img src="../public/bmw-fondo-inicio.webp" alt="" />
+              </div>
+
+              <h2>Gina Molina</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus qui voluptates saepe cumque deserunt.</p>
+            </div>
+          </div>
+
+          
+
+          {/* <------> */}
 
             <h1 className=" text-center font-medium text-4xl mb-14 mt-20">
-              Conocé Nuestros Servicios!!
+              Mas acerca de Nuestros Servicios.
             </h1>
-          <div className="service flex ">
-            
+
+          <div className="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
             <div>
               <h3 className="ml-10 mr-10 text-gray-700">
                 Conocé mas acerca de nuestros servicios, comunicate con nosotros y sabes más.
@@ -37,31 +58,7 @@ const Nosotros = () => {
             <div className=" justify-between shadow-xl mb-16">
               <img src="../public/BMW-Service_1.webp" alt="" className="h-[25rem]" />
             </div>
-            
           </div>
-
-          <div className="service flex ">
-            <div className=" justify-between shadow-xl">
-              <img src="../public/BMW-Service_1.webp" alt="" className="h-[25rem]" />
-            </div>
-            
-            <div>
-              <h3 className="ml-10 mr-10 text-gray-700">
-                Conocé mas acerca de nuestros servicios, comunicate con nosotros y sabes más.
-              </h3>
-            </div>
-            
-          </div>
-
-          {/* <------> */}
-
-          <div className="">
-            <h2>
-              Conocé a nuestro equipo 
-            </h2>
-
-          </div>
-
         </div>
     </div>
   )

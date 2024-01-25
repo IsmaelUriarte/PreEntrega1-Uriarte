@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const CategoryComponent = ({nombre, key, imagen, id}) => {
+const CategoryComponent = ({nombre, imagen, id}) => {
   return (
     <div className="group pb-4  relative border-1 bg-white border-slate-200 rounded-lg  py-3 px-3">
         <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-50">

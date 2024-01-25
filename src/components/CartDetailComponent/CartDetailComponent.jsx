@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
-import { useEffect } from "react";
-import { useState } from "react";
+import { Toaster, toast } from 'sonner'
 
 const CartDetailComponent = ({ cartProductsData }) => {
   const { count, setCount } = useContext(CartContext);
@@ -9,10 +8,12 @@ const CartDetailComponent = ({ cartProductsData }) => {
   const handleRemoveCartItem = (productId) => {
     const updatedCart = count.filter((item) => item.id !== productId);
     setCount(updatedCart);
+    toast.error('Se ha Eliminado un producto del carrito...', {duration: 1000})
   };
 
   return (
     <div className="m-5 p-5">
+      <Toaster richColors position="top-center" />
     <h2 className="text-2xl font-medium pb-4 text-gray-900">Detalle de Compra</h2>
     <ul role="list" className="border p-4 divide-y divide-gray-100">
       {cartProductsData.map((elproducto) => {
@@ -34,7 +35,9 @@ const CartDetailComponent = ({ cartProductsData }) => {
             <div className="mt-1 flex items-center gap-x-1.5">
               <p className="text-xs leading-5 text-gray-500">Cantidad: {elproducto.cantidad}</p>
             </div>
-            <button onClick={() => handleRemoveCartItem(elproducto.titulo)}>Eliminar</button>
+            
+              <button onClick={() =>handleRemoveCartItem (elproducto.titulo)}>Eliminar</button>
+              
           </li>
         )
       }) }

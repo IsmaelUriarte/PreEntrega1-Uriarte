@@ -1,7 +1,9 @@
 
 const Contacto = () => {
   return (
-    <div>Hola, Este es mi formulario</div>
+    <div className="h-[15rem]">
+
+    </div>
   )
 }
 

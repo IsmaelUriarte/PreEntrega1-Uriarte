@@ -10,7 +10,7 @@ const CartWidgetComponent = () => {
   const totalItems = count.reduce((total, item) => total + item.cantidad, 0);
   return (
     <div className=''>
-        <Link to="carrito" variant="outline-dark" className='grid border-1 border-gray-600 rounded-xl '>
+        <Link to="carrito" variant="outline-dark" className='grid border-1 border-gray-600 rounded-xl p-1 transform hover:bg-cyan-950 hover:text-white'>
             Checkout <Badge bg="danger"><box-icon name='cart' color='#e0dfdf'></box-icon> {totalItems}</Badge>
         </Link>
     </div>

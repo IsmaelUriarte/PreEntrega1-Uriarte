@@ -18,7 +18,7 @@ const ProductComponent = ({imagen, titulo, descripcion, precio, enlace, id}) => 
         <p className="text-sm font-medium text-gray-900">{precio}</p>
         </div>
         <div className='mt-2.5 text-center '>
-          <Link to={"/item/" + id} className="p-2.5 m-1.5 rounded-xl bg-cyan-950 text-gray-100 ">Ver más</Link>
+          <Link to={"/item/" + id} className="p-2.5 m-1.5 rounded-xl bg-cyan-950 text-gray-100 ">See more</Link>
         </div>
     </div>
   )
